@@ -1,0 +1,4 @@
+#flux parameters{this line is for comments and is not considered} #name_of_facility(without spaces) f uf alpha ualpha
+CC 19.2 1.0 -0.035 0.009
+LS-27 20.6 1.5 -0.01 0.01
+Rabbit 19.2 1.0 -0.035 0.009
