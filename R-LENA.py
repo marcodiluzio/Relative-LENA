@@ -34,8 +34,8 @@ from matplotlib.figure import Figure
 from classes.rnaaobj import *
 
 #version
-VERSION = 1.01
-VERSION_DATE = '30 July 2020'
+VERSION = 1.1
+VERSION_DATE = '8 October 2020'
 
 #Matplotlib graph visualization parameters
 matplotlib.rcParams['font.size'] = 8
