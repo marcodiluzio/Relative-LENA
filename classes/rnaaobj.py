@@ -44,10 +44,7 @@ class Spectrum:
         return deadtime
     
     def readable_datetime(self):
-        date,time=str.split(str(self.datetime))
-        year,month,day=str.split(date,'-')
-        hour,minute,second=str.split(time,':')
-        return (day+'/'+month+'/'+year+' '+hour+':'+minute+':'+second)
+        return self.datetime.strftime("%d/%m/%Y %H:%M:%S")
     
     def number_of_channels(self):
         try:
@@ -91,10 +88,7 @@ class Irradiation:
         return 'Irradiation '+str(self.code)+' in channel '+str(self.channel)
     
     def readable_datetime(self):
-        date,time=str.split(str(self.datetime))
-        year,month,day=str.split(date,'-')
-        hour,minute,second=str.split(time,':')
-        return (day+'/'+month+'/'+year+' '+hour+':'+minute+':'+second)
+        return self.datetime.strftime("%d/%m/%Y %H:%M:%S")
         
 class Linear_fit:
     """Define linear (E/FWHM) fit"""
