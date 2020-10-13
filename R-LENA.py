@@ -465,7 +465,7 @@ def main():
     NAA.statistical_uncertainty_limit_standard = int(unc_stats_standard)
     dummy_variable = [True,False]
     NAA.statistical_uncertainty_limit_forall = dummy_variable[int(unc_stats_forall)]
-    NAA.info = {'version':VERSION}
+    NAA.info = {'version':VERSION, "version_CRM":CRMs, "version_emissions":database}
     #software information
     software_information()
 
@@ -2261,6 +2261,8 @@ def main():
                     ws.write(0,9,'Distance')
                     ws.write(0,10,'Detector')
                     ws.write(0,12,f'Relative-LENA version {NAA.info["version"]}')
+                    ws.write(1,12,f'CRM database: {NAA.info["version_CRM"]}')
+                    ws.write(2,12,f'Emission database: {NAA.info["version_emissions"]}')
                     ws.write(1,0,NAA.irradiation.datetime,dateandtime)
                     ws.write(1,2,NAA.irradiation.time)
                     ws.write(1,4,NAA.irradiation.channel)
