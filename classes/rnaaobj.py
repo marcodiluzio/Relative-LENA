@@ -270,6 +270,7 @@ class RNAAnalysis:
         self.certificates=None
         self.elem_dataframe=None
         self.experimental_additional_information = {}
+        self.info = {}
     
     def set_backgroungspectrum(self,S):
         if type(S)==Spectrum:
