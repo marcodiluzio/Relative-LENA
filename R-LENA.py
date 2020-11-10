@@ -34,8 +34,8 @@ from matplotlib.figure import Figure
 from classes.rnaaobj import *
 
 #version
-VERSION = 1.1
-VERSION_DATE = '8 October 2020'
+VERSION = 1.2
+VERSION_DATE = '9 November 2020'
 
 #Matplotlib graph visualization parameters
 matplotlib.rcParams['font.size'] = 8
@@ -496,6 +496,8 @@ def main():
                     for filename in lstsel:
                         os.remove('data/presets/'+filename)
                 M.destroy()
+                print('\n...Restart')
+                main()
             
             def change_parameter(V,name,somthing,Scale,Label):
                 Label.configure(text=str(Scale.get()))
